@@ -16,6 +16,6 @@ public class ClickHandler : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData e)
     {
-        
+        manager.ClickTile(index);
     }
 }

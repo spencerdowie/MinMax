@@ -17,12 +17,14 @@ public class GameManager : MonoBehaviour
         if(tiles[i] == 0)
         {
             tiles[i] = (int)player;
+            MinMax((int[])tiles.Clone(), false);
         }
     }
 
-    public int MinMax()
+    public int MinMax(int[] state, bool max)
     {
-
+        state[8] = (int)player;
+        return 0;
     }
 
     public int CheckWin()
